@@ -209,7 +209,7 @@ blockquote p{
 }
 
 .main {
-    margin-left: 220px;
+
     overflow: auto;
     padding: 15px 35px 30px 35px;
     word-wrap: break-word;
@@ -218,8 +218,13 @@ blockquote p{
     line-height: 1.4em;
     color: #333;
 }
+
+.show-toc{
+  margin-left: 220px;
+}
+
 @media(max-width:767px) {
-    .main {
+    .show-toc {
         margin-left: 0;
     }
 ｝

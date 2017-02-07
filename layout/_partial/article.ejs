@@ -18,7 +18,7 @@
     <% } %>
 
 	<!-- 内容 -->
-    <div class="main toc-content">
+    <div class="main toc-content <% if (page.toc) { %> show-toc<% }%>">
     	<%- item.content %>
     </div>
 
