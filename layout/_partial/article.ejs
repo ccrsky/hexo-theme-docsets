@@ -1,0 +1,29 @@
+
+<% if(page.redirect) {%>
+<script type="text/javascript">
+  location.href = '<%= page.redirect %>';
+</script>
+<% } %>
+<nav class="navbar-fixed-top">
+  <div class="navbar-head">
+      <span class="navbar-title"><%= page.title %></span>
+  </div>
+</nav>
+<div>
+	<!-- 目录 -->
+  	<% if (page.toc) { %>
+    <div id="toc" class="sidebar toc hidden-xs">
+    	<%- toc(page.content,{class:'mytoc',list_number:false}) %>
+    </div>
+    <% } %>
+
+	<!-- 内容 -->
+    <div class="main toc-content">
+    	<%- item.content %>
+    </div>
+
+		<!-- <center>
+		  <%- partial('post/pagination', {page: item}) %>
+		</center> -->
+</div>
+

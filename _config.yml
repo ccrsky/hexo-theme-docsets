@@ -1,0 +1,10 @@
+rss: atom.xml
+fancybox: false
+favicon: favicon.png
+inverse_sort: false
+  # Whether to sort all notes inversely
+google_analytics:
+
+# widgets:
+# - category
+

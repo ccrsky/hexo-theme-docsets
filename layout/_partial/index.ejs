@@ -1,0 +1,60 @@
+<%
+  if (theme.inverse_sort) {
+      var posts = site.posts.sort('date', -1) ;
+  } else {
+      var posts = site.posts.sort('date', 1);
+  }
+%>
+	<script type="text/javascript">
+		var config = {
+			curPage:'home',
+			root:'<%= config.root %>',
+			zNodes:[
+				{id:'0', pId:'-1', name: '目录',open:true},
+					<% site.categories.sort('name').each(function(cat){ %>
+				            {id:'<%= cat._id %>', pId:'<%= cat.parent || 0 %>', name: '<%= cat.name %>',isParent:true},
+
+				            <% cat.posts.sort('name').each(function(post){ %>
+				            	<% var cates = post.categories.data,
+				            		len = cates.length,
+				            		pId = len > 0 ? cates[len-1]._id :0;
+
+				            		if(pId == cat._id){
+				            	%>
+					            {id:'<%= post._id %>', pId:'<%=pId%>' || '0', name: '<%= post.title %>',url:'<%= post.path %>'},
+				            	<% }%>
+					       <% }) %>
+				       <% }) %>
+				]
+		};
+
+	</script>
+
+<nav class="navbar index-nav">
+    <span class="navbar-brand">文档中心</span>
+</nav>
+
+<div class="tree-panel">
+	<ul id="cateTree" class="ztree"></ul>
+</div>
+
+<div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
