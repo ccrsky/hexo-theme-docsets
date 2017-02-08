@@ -23,7 +23,7 @@ TocLinkage.prototype = {
 				target = $(el.attr('href')),
 				scrollTop = target.offset().top - 41 - parseInt(target.css('margin-top'));
 
-			bodyEl.animate({
+			$('html,body').animate({
 	            'scrollTop': scrollTop
 	        }, 500,'easeOutExpo');
 
