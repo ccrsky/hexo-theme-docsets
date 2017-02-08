@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>文档编写 | Hexo</title>
+  <meta name="author" content="ccrsky">
+  
+  <meta name="description" content="编写文档
+初始化项目
+安装hexo后进入工作目录，执行以下命令1$ hexo init docs
+主题下载
+在当前目录下，下载主题1$ git clone https://github.com/ccrsky/hexo-theme-docsets.git themes/docsets
+应用主题
+修改_">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="文档编写"/>
+  <meta property="og:site_name" content="Hexo"/>
+
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/hexo-theme-docsets/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link href="/hexo-theme-docsets/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/style.css" media="screen" type="text/css">
+
+ <link rel="stylesheet" href="/hexo-theme-docsets/css/highlight.css" media="screen" type="text/css">
+ <link rel="stylesheet" href="/hexo-theme-docsets/css/zTreeStyle/zTreeStyle.css" type="text/css">
+ <!--
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/sidenav.css" media="screen" type="text/css">  -->
+
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/hexo-theme-docsets/js/jquery-2.0.3.min.js"></script>
+  <script src="/hexo-theme-docsets/js/jquery.ztree.core.js"></script>
+
+  <!-- analytics -->
+  
+
+</head>
+
+<body id="body">
+  <div class="container-fluid" id="container">
+	  
+
+<nav class="navbar-fixed-top">
+  <div class="navbar-head">
+      <span class="navbar-title">文档编写</span>
+  </div>
+</nav>
+<div>
+	<!-- 目录 -->
+  	
+    <div id="toc" class="sidebar toc hidden-xs">
+    	<ol class="mytoc"><li class="mytoc-item mytoc-level-3"><a class="mytoc-link" href="#编写文档"><span class="mytoc-text">编写文档</span></a><ol class="mytoc-child"><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#初始化项目"><span class="mytoc-text">初始化项目</span></a></li><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#主题下载"><span class="mytoc-text">主题下载</span></a></li><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#应用主题"><span class="mytoc-text">应用主题</span></a></li><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#主题更新"><span class="mytoc-text">主题更新</span></a></li></ol></li><li class="mytoc-item mytoc-level-3"><a class="mytoc-link" href="#文档设置"><span class="mytoc-text">文档设置</span></a><ol class="mytoc-child"><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#多级分类设置"><span class="mytoc-text">多级分类设置</span></a></li><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#文档目录接口"><span class="mytoc-text">文档目录接口</span></a></li><li class="mytoc-item mytoc-level-4"><a class="mytoc-link" href="#文档重定向"><span class="mytoc-text">文档重定向</span></a></li></ol></li></ol>
+    </div>
+    
+
+	<!-- 内容 -->
+    <div class="main toc-content  show-toc">
+    	<h3 id="编写文档"><a href="#编写文档" class="headerlink" title="编写文档"></a>编写文档</h3><hr>
+<h4 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h4><hr>
+<p>安装hexo后进入工作目录，执行以下命令<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init docs</div></pre></td></tr></table></figure></p>
+<h4 id="主题下载"><a href="#主题下载" class="headerlink" title="主题下载"></a>主题下载</h4><hr>
+<p>在当前目录下，下载主题<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/ccrsky/hexo-theme-docsets.git themes/docsets</div></pre></td></tr></table></figure></p>
+<h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><hr>
+<p>修改_config.yml配置中的theme<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: docsets</div></pre></td></tr></table></figure></p>
+<h4 id="主题更新"><a href="#主题更新" class="headerlink" title="主题更新"></a>主题更新</h4><hr>
+<p>更新主题，使用最新特性<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> themes/docsets</div><div class="line">$ git pull</div></pre></td></tr></table></figure></p>
+<h3 id="文档设置"><a href="#文档设置" class="headerlink" title="文档设置"></a>文档设置</h3><hr>
+<h4 id="多级分类设置"><a href="#多级分类设置" class="headerlink" title="多级分类设置"></a>多级分类设置</h4><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: category tree demo</div><div class="line">date: 2014-03-16 10:17:16</div><div class="line">categories:</div><div class="line">- web</div><div class="line">- front end</div><div class="line">- javascript</div></pre></td></tr></table></figure>
+<h4 id="文档目录接口"><a href="#文档目录接口" class="headerlink" title="文档目录接口"></a>文档目录接口</h4><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">title: category tree demo</div><div class="line">date: 2014-03-16 10:17:16</div><div class="line">categories:</div><div class="line">- web</div><div class="line">- front end</div><div class="line">- javascript</div><div class="line"></div><div class="line">toc: true</div></pre></td></tr></table></figure>
+<h4 id="文档重定向"><a href="#文档重定向" class="headerlink" title="文档重定向"></a>文档重定向</h4><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">title: category tree demo</div><div class="line">date: 2014-03-16 10:17:16</div><div class="line">categories:</div><div class="line">- web</div><div class="line">- front end</div><div class="line">- javascript</div><div class="line"></div><div class="line">redirect: https://github.com/ccrsky/hexo-theme-docsets/tree/master</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/ccrsky/hexo-theme-docsets/tree/master" target="_blank" rel="external">更多-&gt;</a></p>
+
+    </div>
+
+		<!-- <center>
+		  <div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+			
+			
+			
+	
+	
+		<li class="prev"><a href="/hexo-theme-docsets/2017/02/08/hello-world/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
+	
+	<li><a href="/hexo-theme-docsets/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next"><a href="/hexo-theme-docsets/2017/02/07/主题使用/" class="alignright next">next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
+</ul>
+</div>
+
+		</center> -->
+</div>
+
+
+  </div>
+  
+<a id="toTop" class="gotop 
+" href="#">
+  <span class="arrow">▲</span>
+</a>
+
+<script src="/hexo-theme-docsets/js/jquery.imagesloaded.min.js"></script>
+<!-- <script src="/hexo-theme-docsets/js/gallery.js"></script> -->
+<script src="/hexo-theme-docsets/js/bootstrap.min.js"></script>
+<!-- <script src="/hexo-theme-docsets/js/jquery.tableofcontents.min.js"></script> -->
+<!-- <script src="/hexo-theme-docsets/js/tocgenerator.min.js"></script> -->
+<script src="/hexo-theme-docsets/js/main.js"></script>
+<!-- <script src="/hexo-theme-docsets/js/search.js"></script>  -->
+
+
+
+
+
+
+
+</body>
+</html>

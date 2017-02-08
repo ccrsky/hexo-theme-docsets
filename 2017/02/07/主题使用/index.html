@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>主题使用 | Hexo</title>
+  <meta name="author" content="ccrsky">
+  
+  <meta name="description" content="Hexo-Theme-DocsetsTurn your Hexo into a docsets
+
+Demo
+
+Requirements
+Hexo &amp;gt;= 3.0
+
+Features
+Simple - keep it simple and stupid
+Bootstrap - get the po">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="主题使用"/>
+  <meta property="og:site_name" content="Hexo"/>
+
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/hexo-theme-docsets/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link href="/hexo-theme-docsets/favicon.png" rel="icon">
+  
+
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/style.css" media="screen" type="text/css">
+
+ <link rel="stylesheet" href="/hexo-theme-docsets/css/highlight.css" media="screen" type="text/css">
+ <link rel="stylesheet" href="/hexo-theme-docsets/css/zTreeStyle/zTreeStyle.css" type="text/css">
+ <!--
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/hexo-theme-docsets/css/sidenav.css" media="screen" type="text/css">  -->
+
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/hexo-theme-docsets/js/jquery-2.0.3.min.js"></script>
+  <script src="/hexo-theme-docsets/js/jquery.ztree.core.js"></script>
+
+  <!-- analytics -->
+  
+
+</head>
+
+<body id="body">
+  <div class="container-fluid" id="container">
+	  
+
+<nav class="navbar-fixed-top">
+  <div class="navbar-head">
+      <span class="navbar-title">主题使用</span>
+  </div>
+</nav>
+<div>
+	<!-- 目录 -->
+  	
+    <div id="toc" class="sidebar toc hidden-xs">
+    	<ol class="mytoc"><li class="mytoc-item mytoc-level-1"><a class="mytoc-link" href="#Hexo-Theme-Docsets"><span class="mytoc-text">Hexo-Theme-Docsets</span></a><ol class="mytoc-child"><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Requirements"><span class="mytoc-text">Requirements</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Features"><span class="mytoc-text">Features</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Install"><span class="mytoc-text">Install</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Enable"><span class="mytoc-text">Enable</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Update"><span class="mytoc-text">Update</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Configuration"><span class="mytoc-text">Configuration</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#Front-Matter"><span class="mytoc-text">Front-Matter</span></a></li><li class="mytoc-item mytoc-level-2"><a class="mytoc-link" href="#License"><span class="mytoc-text">License</span></a></li></ol></li></ol>
+    </div>
+    
+
+	<!-- 内容 -->
+    <div class="main toc-content  show-toc">
+    	<h1 id="Hexo-Theme-Docsets"><a href="#Hexo-Theme-Docsets" class="headerlink" title="Hexo-Theme-Docsets"></a>Hexo-Theme-Docsets</h1><p>Turn your Hexo into a docsets</p>
+<ul>
+<li><a href="http://ccrsky.github.io/hexo-theme-docsets/">Demo</a></li>
+</ul>
+<h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><ul>
+<li>Hexo &gt;= 3.0</li>
+</ul>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li><strong>Simple</strong> - keep it simple and stupid</li>
+<li><strong>Bootstrap</strong> - get the power of Twitter Bootstrap</li>
+<li><strong>Category Tree</strong> - auto generate multilevel catogory tree by using Front-Matter in the post</li>
+<li><strong>External Link</strong> － redirect to external link by using redirect variable in the post</li>
+</ul>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/ccrsky/hexo-theme-docsets.git themes/docsets</div></pre></td></tr></table></figure>
+<h2 id="Enable"><a href="#Enable" class="headerlink" title="Enable"></a>Enable</h2><p>Modify <code>theme</code> setting in your <code>_config.yml</code> to <code>docsets</code>.</p>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> themes/docsets</div><div class="line">$ git pull</div></pre></td></tr></table></figure>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rss: atom.xml</div><div class="line">favicon: favicon.png</div><div class="line">inverse_sort: false</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>rss</strong> - RSS link</li>
+<li><strong>inverse_sort</strong> - whether to sort all documents inversely. By default docsets will sort all documents chronologically.</li>
+</ul>
+<h2 id="Front-Matter"><a href="#Front-Matter" class="headerlink" title="Front-Matter"></a>Front-Matter</h2><ul>
+<li><strong>toc</strong> - renders a table of contents</li>
+<li><strong>redirect</strong> - auto redirect to external link</li>
+</ul>
+<p>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">title: category tree demo</div><div class="line">date: 2014-03-16 10:17:16</div><div class="line">categories:</div><div class="line">- web</div><div class="line">- front end</div><div class="line">- javascript</div><div class="line"></div><div class="line">toc: true</div><div class="line">---</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">title: redirect to external link demo</div><div class="line">date: 2014-03-16 10:17:16</div><div class="line">categories:</div><div class="line">- web</div><div class="line">- javascript</div><div class="line"></div><div class="line">redirect: http://ccrsky.github.io</div><div class="line">---</div></pre></td></tr></table></figure>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>This theme is provided under <a href="http://opensource.org/licenses/MIT" target="_blank" rel="external">MIT License</a>.</p>
+
+    </div>
+
+		<!-- <center>
+		  <div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+	
+	
+		<li class="prev"><a href="/hexo-theme-docsets/2017/02/07/文档编写/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
+	
+	<li><a href="/hexo-theme-docsets/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next disabled"><a>next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
+</ul>
+</div>
+
+		</center> -->
+</div>
+
+
+  </div>
+  
+<a id="toTop" class="gotop 
+" href="#">
+  <span class="arrow">▲</span>
+</a>
+
+<script src="/hexo-theme-docsets/js/jquery.imagesloaded.min.js"></script>
+<!-- <script src="/hexo-theme-docsets/js/gallery.js"></script> -->
+<script src="/hexo-theme-docsets/js/bootstrap.min.js"></script>
+<!-- <script src="/hexo-theme-docsets/js/jquery.tableofcontents.min.js"></script> -->
+<!-- <script src="/hexo-theme-docsets/js/tocgenerator.min.js"></script> -->
+<script src="/hexo-theme-docsets/js/main.js"></script>
+<!-- <script src="/hexo-theme-docsets/js/search.js"></script>  -->
+
+
+
+
+
+
+
+</body>
+</html>
