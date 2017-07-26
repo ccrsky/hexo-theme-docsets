@@ -3,6 +3,22 @@
     font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft Yahei","微软雅黑",Arial,sans-serif;
 }
 
+table{
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+
+td,th{
+  padding:6px 10px;
+  border:1px solid #eee;
+}
+
+thead{
+  background-color: #f7f7f7;
+}
+
+
 .index-nav{
   background-color: #FF4611;
   border-radius: 0;
@@ -228,3 +244,5 @@ blockquote p{
         margin-left: 0;
     }
 ｝
+
+
